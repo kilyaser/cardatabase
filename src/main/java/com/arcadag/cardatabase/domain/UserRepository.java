@@ -4,8 +4,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;
 
-public interface OwnerRepository extends CrudRepository<Owner, Long> {
+public interface UserRepository extends CrudRepository<User, Long> {
 
-
-    Optional<Owner> findByFirstname(String firstName);
+    Optional<User> findByUsername(String username);
 }
